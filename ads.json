@@ -1,21 +1,47 @@
-{
-  "version": 1,
-  "updated_at": "2025-08-13T12:00:00Z",
-  "mode": "audit",
-  "blog_url": "https://blog.naver.com/somunnan_/223824000111",
-  "default_interval_ms": 5000,
-  "banners": {
-    "default": [
-      {
-        "img": "https://via.placeholder.com/728x90.png?text=Hot+Deal",
-        "link": "https://link.coupang.com/a/cKfU5u",
-        "title": "오늘의 특가"
-      },
-      {
-        "img": "https://via.placeholder.com/728x90.png?text=Trending",
-        "link": "https://link.coupang.com/a/cKf1Pp",
-        "title": "요즘 뜨는 상품"
-      }
-    ]
-  }
-}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coupang Carousel Banner</title>
+  <style>
+    .wrap { max-width: 680px; margin: 0 auto; padding: 8px; }
+    /* iframe이 생성된 뒤 가로폭에 맞게 꽉 채우기 */
+    .wrap iframe { width: 100%; height: auto; display: block; }
+  </style>
+</head>
+<body>
+  <div class="wrap" id="cp-wrap-903793">
+    <script src="https://ads-partners.coupang.com/g.js"></script>
+    <script>
+      (function () {
+        // ★ 네가 준 배너 코드 그대로
+        new PartnersCoupang.G({
+          "id": 903793,
+          "template": "carousel",
+          "trackingCode": "AF3198732",
+          "width": "680",
+          "height": "140",
+          "tsource": ""
+        });
+
+        // ★ 반응형 리사이즈 (iframe 생성 후 비율 유지)
+        function resize() {
+          var wrap = document.getElementById("cp-wrap-903793");
+          if (!wrap) return;
+          var iframe = wrap.querySelector("iframe");
+          if (!iframe) return;
+          var w = Math.min(wrap.clientWidth || 680, 680);
+          var h = Math.round(w * 140 / 680);
+          iframe.style.width  = w + "px";
+          iframe.style.height = h + "px";
+        }
+        var mo = new MutationObserver(resize);
+        mo.observe(document.getElementById("cp-wrap-903793"), { childList: true, subtree: true });
+        window.addEventListener("load", resize);
+        window.addEventListener("resize", resize);
+      })();
+    </script>
+  </div>
+</body>
+</html>
