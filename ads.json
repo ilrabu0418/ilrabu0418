@@ -15,17 +15,17 @@
     <script src="https://ads-partners.coupang.com/g.js"></script>
     <script>
       (function () {
-        // ★ 네가 준 배너 코드 그대로
+        // 쿠팡 배너 코드 (영문 키 그대로!)
         new PartnersCoupang.G({
-          "id": 903793,
-          "template": "carousel",
-          "trackingCode": "AF3198732",
-          "width": "680",
-          "height": "140",
-          "tsource": ""
+          id: 903793,
+          template: "carousel",
+          trackingCode: "AF3198732",
+          width: "680",
+          height: "140",
+          tsource: ""
         });
 
-        // ★ 반응형 리사이즈 (iframe 생성 후 비율 유지)
+        // 반응형 리사이즈 (iframe 생성 후 비율 유지)
         function resize() {
           var wrap = document.getElementById("cp-wrap-903793");
           if (!wrap) return;
