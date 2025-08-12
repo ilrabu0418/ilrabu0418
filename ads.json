@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "updated_at": "2025-08-13T12:00:00Z",
+  "mode": "audit",
+  "blog_url": "https://blog.naver.com/somunnan_/223824000111",
+  "default_interval_ms": 5000,
+  "banners": {
+    "default": [
+      {
+        "img": "https://via.placeholder.com/728x90.png?text=Hot+Deal",
+        "link": "https://link.coupang.com/a/cKfU5u",
+        "title": "오늘의 특가"
+      },
+      {
+        "img": "https://via.placeholder.com/728x90.png?text=Trending",
+        "link": "https://link.coupang.com/a/cKf1Pp",
+        "title": "요즘 뜨는 상품"
+      }
+    ]
+  }
+}
