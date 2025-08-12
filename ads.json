@@ -1,18 +1,23 @@
 {
   "version": 2,
-  "mode": "audit",
+  "updated_at": "2025-08-12T12:00:00Z",
+  "mode": "production",
   "blog_url": "https://blog.naver.com/somunnan_/223824000111",
-  "default_interval_ms": 5000,
   "banners": {
     "default": [
-      { "type": "text",  "label": "오늘의 특가", "bg": "#0A84FF", "fg": "#FFFFFF",
-        "link": "https://link.coupang.com/a/cKfU5u" },
-
-      { "type": "image", "img": "https://via.placeholder.com/728x90.png?text=Trending",
-        "link": "https://link.coupang.com/a/cKf1Pp", "title": "요즘 뜨는 상품" },
-
-      { "type": "html",  "html_url": "https://ilrabu0418.github.io/ilrabu0418/banner.html",
-        "height": 140, "fallback_label": "추천 상품 보기" }
-    ]
+      {
+        "type": "webview",
+        "html_url": "https://ilrabu0418.github.io/ilrabu0418/banner.html",
+        "width": 680,
+        "height": 140,
+        "title": "쿠팡 파트너스 특가"
+      }
+    ],
+    "fallback": {
+      "type": "image",
+      "img": "https://via.placeholder.com/680x140.png?text=Coupang+Partners",
+      "link": "https://link.coupang.com/a/cKfU5u",
+      "title": "쿠팡 파트너스"
+    }
   }
 }
