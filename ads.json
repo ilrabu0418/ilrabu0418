@@ -1,10 +1,17 @@
 {
-  "ads": [
-    {
-      "title": "사용설명서",
-      "description": "리뷰매니저 사용 방법을 확인하세요",
+  "banners": {
+    "default": [
+      {
+        "type": "webview",
+        "html_url": "data:text/html,<html><body style='margin:0;padding:0;'><div style='width:680px;height:80px;background:#4CAF50;display:flex;align-items:center;justify-content:center;cursor:pointer;' onclick='window.open(\"https://msj7553.tistory.com/2\")'><h1 style='color:white;font-family:Arial;'>사용설명서</h1></div></body></html>",
+        "width": 680,
+        "height": 80
+      }
+    ],
+    "fallback": {
+      "img": "https://via.placeholder.com/680x80/4CAF50/FFFFFF?text=사용설명서",
       "link": "https://msj7553.tistory.com/2",
-      "type": "text"
+      "title": "사용설명서"
     }
-  ]
+  }
 }
