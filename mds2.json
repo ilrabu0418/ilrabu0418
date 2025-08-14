@@ -1,1 +1,18 @@
-
+{
+  "version": 3,
+  "updated_at": "2025-08-12T13:00:00Z",
+  "mode": "production",
+  "blog_url": "https://msj7553.tistory.com/2",
+  "banners": {
+    "default": [
+      {
+        "type": "image",
+        "img": "https://raw.githubusercontent.com/ilrabu0418/ilrabu0418/main/1.png",
+        "link": "https://msj7553.tistory.com/2",
+        "title": "네이버 블로그 바로가기",
+        "width": 680,
+        "height": 140
+      }
+    ]
+  }
+}
