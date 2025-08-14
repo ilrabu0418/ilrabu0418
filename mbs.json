@@ -1,0 +1,23 @@
+{
+  "banner": {
+    "image_url": "https://raw.githubusercontent.com/ilrabu0418/ilrabu0418/main/manual_banner.png",
+    "click_url": "https://msj7553.tistory.com/2",
+    "alt_text": "리뷰매니저 사용설명서"
+  },
+  "banners": {
+    "default": [
+      {
+        "type": "image",
+        "img": "https://raw.githubusercontent.com/ilrabu0418/ilrabu0418/main/manual_banner.png",
+        "link": "https://msj7553.tistory.com/2",
+        "title": "리뷰매니저 사용설명서"
+      }
+    ],
+    "fallback": {
+      "img": "https://raw.githubusercontent.com/ilrabu0418/ilrabu0418/main/manual_banner.png",
+      "link": "https://msj7553.tistory.com/2",
+      "title": "리뷰매니저 사용설명서"
+    }
+  },
+  "blog_url": "https://msj7553.tistory.com/2"
+}
